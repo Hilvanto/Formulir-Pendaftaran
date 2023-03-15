@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Formulir Pendaftaran</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulir Pendaftaran</h1>
+    <p>Silakan isi formulir ini dengan informasi yang diperlukan</p>
+    <form method="post" action='https://register-demo.freecodecamp.org'>
+      <fieldset>
+        <label for="first-name">Masukkan nama depan Anda: <input id="first-name" name="first-name" type="text" required /></label>
+        <label for="last-name">Masukkan nama belakang Anda: <input id="last-name" name="last-name" type="text" required /></label>
+        <label for="email">Masukkan Email Anda: <input id="email" name="email" type="email" required /></label>
+        <label for="new-password">Buat Kata Sandi Baru: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline" /> Akun Pribadi</label>
+        <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline" /> Akun Bisnis</label>
+        <label for="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Saya Menerima <a href="https://www.freecodecamp.org/news/terms-of-service/">Syarat & Ketentuan</a>
+        </label>
+      </fieldset>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
